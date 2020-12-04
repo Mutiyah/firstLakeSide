@@ -1,0 +1,56 @@
+
+#our-service {
+    width: 100vw;
+    height: auto;
+    padding: 50px 0;
+    background-image: url(../images/servicesbg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+.sub-services{
+    width: 90%;
+    margin: auto;
+    background-color:#000;
+    border-radius: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#our-service .card-image{
+    position: relative;
+}
+#our-service .card-image .label{
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    color: #000;
+    font-size: 2em;
+    transition: opacity .3s ease-in-out;
+}
+#our-service .card-image .label:hover{
+    opacity: .4;
+}
+#our-service .card-image .label p{
+    color: #f3ca20;
+    text-align: center;
+    margin-top: 20%;
+    opacity: 1;
+}
+
+#servicesHeading{
+    color: #f3ca20;
+    font-size: 3em;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+    border-radius: 15px 15px 0 0;
+    padding: 5px 15px;
+    border-bottom: 1px solid #f3ca20;
+}

@@ -1,0 +1,112 @@
+
+/* .............
+About Us section
+................ */
+
+.media {
+	width: 1000px;
+	margin: 30px auto;
+	position: relative;
+	-webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -o-perspective: 1200px;
+    perspective: 1200px;
+ 
+}
+
+
+ 
+#aboutUs-imgCan {
+    -webkit-transition: all 3s cubic-bezier(0.950, 0.050, 0.795, 0.035);
+    -moz-transition: all 3s cubic-bezier(0.950, 0.050, 0.795, 0.035);
+    -o-transition: all 3s cubic-bezier(0.950, 0.050, 0.795, 0.035);
+	transition: all 3s cubic-bezier(0.950, 0.050, 0.795, 0.035);
+    -webkit-transition-delay: .5s;
+    -moz-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    transition-delay: .5s;
+    animation: rotar 5s infinite linear;
+}
+
+#aboutUs-imgCan:hover {
+    animation-play-state: paused;
+}
+
+.animated {
+    -webkit-transform: rotateY(180deg);    
+    -moz-transform: rotateY(180deg);    
+    -o-transform: rotateY(180deg);    
+	transform: rotateY(180deg);	
+}
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+#about-us{
+    width: 100vw;
+    height: auto;
+    padding-top: 100px;
+}
+.media{
+    background-color: rgba(82, 80, 80, 0) ;
+    color: #f3ca20;
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+}
+
+.media-body{
+    text-align: justify;
+}
+
+#aboutUs-img{
+    border-radius: 50%;
+    margin: auto;
+    width: 100%;
+}
+/* .............
+About Us section
+................ */
+.our-mission{
+    height: auto;
+    padding: 0 20px;
+    background-color: #000;
+    font-size: 1.1em;
+    color: #f3ca20;
+}
+.media-body p{
+   font-family: 'Poppins' serif;
+}
+.mission{
+    background-color: #000;
+    /* border-radius: 30% ; */
+  padding-top: 50px;
+  width: 100px;
+    height: 200px;
+    color: #f3ca20;
+    margin: auto;
+    border: 1px solid #f3ca20;
+}
+.mission h1{
+    text-align: center;
+}
+
+
+@media (max-width: 1000px) {
+    .flex-it{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+  
+    .mission{
+        flex: 1 0 95%;
+      max-width: 95vw;
+      height: auto;
+      padding: 20px;
+    }
+  
+  }
